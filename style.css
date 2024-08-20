@@ -1,0 +1,147 @@
+*{
+    font-family: 'calibri', sans-serif; /* Mantendo a consistência com a fonte */
+}
+/* Estilo geral do corpo */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-image: url(/image/1lu31x1angtb1.jpg);
+    background-size: cover;
+    font-family: 'Arial', sans-serif; /* Adicionando uma fonte mais moderna */
+  }
+  
+  h1,h2,h3,h4,h5,p,ul,li{
+    color: white;
+  }
+  
+  h3{
+    font-weight: bold;
+    text-align: center;
+  }
+
+  /* Ajuste no estilo de seção */
+  section {
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  /* Seções com fundo e sombra */
+  #social,
+  #apresentacao,
+  #portExp,
+  #linguagens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin: 5px;
+    padding: 10px;
+    background: transparent; /* Transparência para o efeito de vidro */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Sombra para um efeito de profundidade */
+
+  }
+  
+  /* Estilo dos itens sociais */
+  #social img {
+    width: 125px;
+    height: 125px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  #socialLinha {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  #socialLinha img,
+  #linguagens img, .itemInfo button {
+    border-radius: 10px;
+    height: 32px;
+    width: 32px;
+    padding: 2px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.25); /* Transparência para o efeito de vidro */
+    transition: transform 0.3s ease-in-out;
+    border: 1px solid black;
+  }
+  
+  #socialLinha img:hover,
+  #linguagens img:hover, .itemInfo button:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Ajustes específicos das seções */
+  #resumo,
+  #portExp,
+  #linguagens {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    width: 75vw;
+    max-width: 1280px;
+    justify-content: space-around;
+  }
+  
+  #resumo {
+    text-align: center;
+  }
+  
+  #linguagens {
+    flex-direction: row;
+  }
+  
+  #portExp {
+    text-align: center;
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  /* Estilo do título de seção */
+  .section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0 10px 0;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para destaque */
+    font-family: 'Montserrat', sans-serif; /* Usando uma fonte moderna */
+  }
+  
+  /* Estilo dos itens do portfólio e experiências */
+  .itemInfo {
+    background: rgba(0, 0, 0, 0.5); /* Transparência para o efeito de vidro */
+    border-radius: 10px;
+    max-width: 500px;
+    padding: 15px;
+    margin: 15px;
+    border: 1px solid rgba(160, 160, 160, 0.5); /* Borda sutil */
+    text-align: start;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para um efeito de profundidade */
+  }
+
+  .itemInfo h3{
+    font-weight: bold;
+  }
+  
+  .itemInfo button {
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .itemInfo img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para um efeito de profundidade */
+    margin-bottom: 5px;
+  }
